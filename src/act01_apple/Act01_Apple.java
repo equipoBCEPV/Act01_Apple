@@ -16,6 +16,7 @@ public class Act01_Apple {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        String nombre;
     }
     
 }
