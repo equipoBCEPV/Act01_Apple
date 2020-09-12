@@ -32,8 +32,21 @@ public class Act01_Apple {
         producto.setVersionSoftware(1);
         producto.setFecha(fecha);
         
-        System.out.println(producto);
+        Pais inglaterra = new Pais();
+         FechaDeLlegada fech = new FechaDeLlegada();
         
+        fech.setMonth("Febrero");
+        fech.setDay(11);
+        fech.setYear(2012);
+        
+        inglaterra.setNombre("Inglaterra");
+        inglaterra.setCodigoPostal("L10-L19");
+        inglaterra.setProd(producto);
+        inglaterra.setFech(fech);
+        
+        
+        System.out.println(producto);
+        System.out.println(inglaterra);
 
         
         
