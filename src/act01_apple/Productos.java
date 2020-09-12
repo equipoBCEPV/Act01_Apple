@@ -12,15 +12,15 @@ package act01_apple;
  */
 public class Productos {
     private String nombre;
-    FechaDeSalida fecha;
-    private int precio;
+    private FechaDeSalida fecha;
+    private double precio;
     private String categoria;
     
     
     public Productos(){
     }
 
-    public Productos(String nombre, FechaDeSalida fecha, int precio, String categoria) {
+    public Productos(String nombre, FechaDeSalida fecha, double precio, String categoria) {
         this.nombre = nombre;
         this.fecha = fecha;
         this.precio = precio;
@@ -43,11 +43,11 @@ public class Productos {
         this.fecha = fecha;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 
@@ -59,6 +59,7 @@ public class Productos {
         this.categoria = categoria;
     }
     
+        
     public void crearProducto() {
         
     }
@@ -81,7 +82,7 @@ public class Productos {
 
     @Override
     public String toString() {
-        return "Productos" + "nombre=" + nombre + ", fecha=" + fecha + ", precio=" + precio + ", categoria=" + categoria;
+        return "Producto" + "\n Nombre: " + nombre + fecha + "\n Precio: " + precio + "\n Categoria: " + categoria;
     }
     
     

@@ -12,13 +12,13 @@ package act01_apple;
 public class Software extends Productos {
     private int idSoftware;
     private String categoriaSoftware;
-    private int versionSoftware;
+    private double versionSoftware;
     
     public Software(){
         
     }
 
-    public Software(int idSoftware, String categoriaSoftware, int versionSoftware, String nombre, FechaDeSalida fecha, int precio, String categoria) {
+    public Software(int idSoftware, String categoriaSoftware, double versionSoftware, String nombre, FechaDeSalida fecha, double precio, String categoria) {
         super(nombre, fecha, precio, categoria);
         this.idSoftware = idSoftware;
         this.categoriaSoftware = categoriaSoftware;
@@ -41,17 +41,17 @@ public class Software extends Productos {
         this.categoriaSoftware = categoriaSoftware;
     }
 
-    public int getVersionSoftware() {
+    public double getVersionSoftware() {
         return versionSoftware;
     }
 
-    public void setVersionSoftware(int versionSoftware) {
+    public void setVersionSoftware(double versionSoftware) {
         this.versionSoftware = versionSoftware;
     }
 
     @Override
     public String toString() {
-        return "Software" + "\n ID: " + idSoftware + "\n Categoria de Software: " + categoriaSoftware + "\n Version de Software: " + versionSoftware + "\n " + fecha;
+        return super.toString() + "\n ID: " + idSoftware + "\n Categoria de Software: " + categoriaSoftware + "\n Version de Software: " + versionSoftware + "\n ";
     }
     
     

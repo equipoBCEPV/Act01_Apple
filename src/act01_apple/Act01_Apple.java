@@ -18,18 +18,14 @@ public class Act01_Apple {
         // TODO code application logic here
         
         Software producto = new Software();
-        FechaDeSalida fecha = new FechaDeSalida();
-        
-        fecha.setMonth("Enero");
-        fecha.setDay(02);
-        fecha.setYear(2012);
-        
+        FechaDeSalida fecha = new FechaDeSalida("Enero",1,2020);
+ 
         producto.setNombre("Hola");
         producto.setCategoria("Software");
-        producto.setPrecio(100);
+        producto.setPrecio(10.5);
         producto.setIdSoftware(1);
         producto.setCategoriaSoftware("Audio");
-        producto.setVersionSoftware(1);
+        producto.setVersionSoftware(1.3);
         producto.setFecha(fecha);
         
         System.out.println(producto);

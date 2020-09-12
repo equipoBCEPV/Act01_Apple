@@ -9,7 +9,7 @@ package act01_apple;
  *
  * @author Pablo
  */
-public class FechaDeSalida extends Productos {
+public class FechaDeSalida {
     
     private String month;
     private int day;
@@ -18,6 +18,13 @@ public class FechaDeSalida extends Productos {
     public FechaDeSalida(){
         
     }
+
+    public FechaDeSalida(String month, int day, int year) {
+        this.month = month;
+        this.day = day;
+        this.year = year;
+    }
+    
 
     public String getMonth() {
         return month;
@@ -45,7 +52,7 @@ public class FechaDeSalida extends Productos {
 
     @Override
     public String toString() {
-        return "Fecha de Salida: " + month + "/" + day + "/" + year;
+        return "\n Fecha de Salida: " + month + "/" + day + "/" + year;
     }
     
     

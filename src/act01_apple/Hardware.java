@@ -12,13 +12,13 @@ package act01_apple;
 public class Hardware extends Productos {
     private int idHardware;
     private String categoriaHardware;
-    private int versionHardware;
+    private double versionHardware;
     
     public Hardware(){
     
     }
 
-    public Hardware(int idHardware, String categoriaHardware, int versionHardware, String nombre, FechaDeSalida fecha, int precio, String categoria) {
+    public Hardware(int idHardware, String categoriaHardware, double versionHardware, String nombre, FechaDeSalida fecha, double precio, String categoria) {
         super(nombre, fecha, precio, categoria);
         this.idHardware = idHardware;
         this.categoriaHardware = categoriaHardware;
@@ -41,17 +41,17 @@ public class Hardware extends Productos {
         this.categoriaHardware = categoriaHardware;
     }
 
-    public int getVersionHardware() {
+    public double getVersionHardware() {
         return versionHardware;
     }
 
-    public void setVersionHardware(int versionHardware) {
+    public void setVersionHardware(double versionHardware) {
         this.versionHardware = versionHardware;
     }
 
     @Override
     public String toString() {
-        return "Hardware" + "\n Id Hardware: " + idHardware + "\n Categoria Hardware=" + categoriaHardware + "\n Version Hardware=" + versionHardware + "\n Fecha de Salida: " +fecha;
+        return "Hardware" + "\n Id Hardware: " + idHardware + "\n Categoria Hardware=" + categoriaHardware + "\n Version Hardware=" + versionHardware;
     }
     
     
