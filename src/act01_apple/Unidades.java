@@ -11,4 +11,29 @@ package act01_apple;
  */
 public class Unidades {
     
+    private int unidadesTotales;
+    
+    public Unidades(){
+        
+    }
+
+    public Unidades(int unidadesTotales) {
+        this.unidadesTotales = unidadesTotales;
+    }
+
+    public int getUnidadesTotales() {
+        return unidadesTotales;
+    }
+
+    public void setUnidadesTotales(int unidadesTotales) {
+        this.unidadesTotales = unidadesTotales;
+    }
+
+    @Override
+    public String toString() {
+        return "" + unidadesTotales;
+    }
+    
+    
+   
 }

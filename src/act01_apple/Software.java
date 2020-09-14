@@ -51,7 +51,7 @@ public class Software extends Productos {
 
     @Override
     public String toString() {
-        return super.toString() + "\n ID: " + idSoftware + "\n Categoria de Software: " + categoriaSoftware + "\n Version de Software: " + versionSoftware + "\n ";
+        return super.toString() + "\n ID: " + idSoftware + "\n Categoria de Software: " + categoriaSoftware + "\n Version de Software: " + versionSoftware;
     }
     
     

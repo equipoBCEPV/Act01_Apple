@@ -59,6 +59,9 @@ public class Productos {
         this.categoria = categoria;
     }
     
+    public void addFechaDeSalida(FechaDeSalida fecha) {
+        this.fecha = fecha;
+    }
         
     public void crearProducto() {
         

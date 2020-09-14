@@ -9,6 +9,31 @@ package act01_apple;
  *
  * @author Pablo
  */
-public class AppleStore {
+public class AppleStore extends CentrosDeDistribucion {
+    private int ventasAppleStore;
+    
+    public AppleStore(){
+        
+    }
+
+    public AppleStore(int ventasAppleStore, String nombreCiuidad, int unidadesAsignadas, String status) {
+        super(nombreCiuidad, unidadesAsignadas, status);
+        this.ventasAppleStore = ventasAppleStore;
+    }
+
+    public int getVentasAppleStore() {
+        return ventasAppleStore;
+    }
+
+    public void setVentasAppleStore(int ventasAppleStore) {
+        this.ventasAppleStore = ventasAppleStore;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\n AppleStore" + "\n Ventas AppleStore: " + ventasAppleStore;
+    }
+    
+    
     
 }

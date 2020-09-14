@@ -51,7 +51,7 @@ public class Hardware extends Productos {
 
     @Override
     public String toString() {
-        return "Hardware" + "\n Id Hardware: " + idHardware + "\n Categoria Hardware=" + categoriaHardware + "\n Version Hardware=" + versionHardware;
+        return super.toString() + "\n ID: " + idHardware + "\n Categoria Hardware: " + categoriaHardware + "\n Version Hardware: " + versionHardware;
     }
     
     
